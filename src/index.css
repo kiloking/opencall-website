@@ -30,3 +30,25 @@ body {
     transform: rotateY(180deg);
   }
 }
+
+@keyframes bounce2 {
+  70% {
+    transform: translateX(0%);
+  }
+  80% {
+    transform: translateX(-25%);
+  }
+  90% {
+    transform: translateX(0%);
+  }
+  95% {
+    transform: translateX(-7%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.bounce {
+  animation: bounce2 1s ease infinite;
+}

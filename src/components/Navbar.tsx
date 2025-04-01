@@ -1,4 +1,4 @@
-import { ScrollText } from "lucide-react";
+import { MoveRight, ScrollText } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
@@ -54,10 +54,17 @@ function Navbar() {
             </Link>
           ))}
         </div>
-        <button className="bg-[#30E2DD] text-black px-6 py-2 rounded-md flex items-center">
-          <ScrollText className="mr-2" />
-          報名專區
-        </button>
+        <div className="flex gap-2 items-center">
+          <div className="flex ">
+            <div className=" items-center text-white text-xs bg-gradient-to-r from-[#51c3f1] to-[#f77f58]  rounded-lg py-1 px-2 gap-1 bounce hidden md:flex ">
+              儘速報名 <MoveRight />
+            </div>
+          </div>
+          <button className="bg-[#30E2DD] text-black px-6 py-2 rounded-md flex items-center">
+            <ScrollText className="mr-2" />
+            報名專區
+          </button>
+        </div>
       </div>
     </nav>
   );
