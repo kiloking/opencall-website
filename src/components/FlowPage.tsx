@@ -45,14 +45,14 @@ function FlowPage() {
   const step1_2 = [
     {
       title: "主題 (15%)",
-      desc: "傳達的核心思想或情感",
+      desc: "記憶點與感染力",
     },
     {
       title: "內容 (30%)",
       desc: "敘事能力與完整度",
     },
     {
-      title: "創意 (10%)",
+      title: "創意 (15%)",
       desc: "原創性與創意傳達",
     },
     {
@@ -60,8 +60,8 @@ function FlowPage() {
       desc: "作品情感的說服力與感染力",
     },
     {
-      title: "嘉義市元素-場景/人物/故事 (30%)",
-      desc: "對嘉義文化特色的詮釋",
+      title: "嘉義市元素的深度 (30%)",
+      desc: "場景、人物、故事等",
     },
   ];
   const step2 = [
@@ -77,15 +77,11 @@ function FlowPage() {
       title: "監製協力",
       icon: "https://web.forestdev.work/chiayi/opencall/icon04.svg",
     },
-    {
-      title: "影視音基地課表",
-      icon: "https://web.forestdev.work/chiayi/opencall/icon05.svg",
-    },
   ];
   const step3 = [
     {
       title:
-        "以1920*1080(FHD)或以上avi/mov/mpg/wmv/mp4 (h264)格式，影片編輯軟體不限。",
+        "影片解析度:以1920*1080(FHD)或以上之avi/mov/mpg/wmv/mp4 (h264)格式，影片編輯軟體不限。",
       icon: "https://web.forestdev.work/chiayi/opencall/icon06.svg",
     },
     {
@@ -130,6 +126,10 @@ function FlowPage() {
       <h2 className="text-xl mb-8 border-l-4 border-[#30E2DD]  text-[#30E2DD] pl-4 flex items-center">
         第 1 階段 : 企劃提案
       </h2>
+      <div className="text-sm mb-4">
+        報名者除基本資料填寫及同意書簽屬外，需繳交「片名」、「片
+        種」、「製作立意-500字內」、「故事內容簡述-500字內」、「人物介紹、腳本、分鏡、場景等設定-500字內」、「嘉義元素說明推廣效益評估-500字內」、「片花(選填)」、「其他補充或加分事項-500字內(選填，並可提供雲端連結)」
+      </div>
       <div className="py-4">
         <div className="grid grid-cols-5 gap-4 ">
           {step1.map((item) => (
@@ -173,11 +173,11 @@ function FlowPage() {
           />
         </div>
       </div>
-      <div className="flex gap-4 justify-center items-center w-8/12 mx-auto my-6">
-        <div className=" rounded-full text-zinc-800 bg-zinc-500 py-2 px-4 whitespace-nowrap">
+      <div className="flex gap-4 justify-center items-center w-10/12 mx-auto my-6">
+        <div className=" rounded-full text-zinc-800 bg-sky-400 py-2 px-4 whitespace-nowrap">
           初選審查
         </div>
-        <div className="text-sm">
+        <div className="text-base">
           由主辦單位邀集相關領域之專家、學者組成評審團，擇優選出入選者，學生組及社會組，
           <span className="text-[#30E2DD]">各5至7組，備取2組為限。</span>
         </div>
@@ -185,7 +185,10 @@ function FlowPage() {
       <h2 className="text-xl mb-8 border-l-4 border-[#30E2DD]  text-[#30E2DD] pl-4 flex items-center">
         第 2 階段 : 協力產製
       </h2>
-      <div className="grid grid-cols-4 gap-4 justify-center items-center w-12/12 mx-auto my-6">
+      <div className="text-sm mb-4">
+        入選者 從中完成「20小時」的培育時數累積之規定需求。
+      </div>
+      <div className="grid grid-cols-3 gap-4 justify-center items-center w-12/12 mx-auto my-6">
         {step2.map((item) => (
           <div key={item.title} className="flex flex-col items-center gap-4">
             <div className="w-12 h-12 flex items-center justify-center">
@@ -195,8 +198,28 @@ function FlowPage() {
           </div>
         ))}
       </div>
-      <div className="bg-gray-800/80 py-2 text-center mb-8 tracking-wider">
-        監製名單
+      <div className="flex gap-4 justify-center items-center w-10/12 mx-auto my-6">
+        <div className=" rounded-full text-zinc-800 bg-sky-400 py-2 px-4 whitespace-nowrap">
+          協力監製
+        </div>
+        <div className="text-base">
+          每位入選者將配選一位監製，透過線上或線下方式協助控管進度、解決問題，確保最終完整的
+          12 分鐘影片可以順利完成，並達到最佳呈現效果。
+        </div>
+      </div>
+      <div className="bg-gray-800/80 py-2 text-center mb-8 tracking-wider font-bold flex items-center justify-between gap-2 px-4">
+        <div>監製名單</div>
+        <a
+          href="https://web.forestdev.work/chiayi/opencall/master.png"
+          className="flex items-center gap-2 underline"
+        >
+          影視音基地課表
+          <img
+            src="https://web.forestdev.work/chiayi/opencall/icon05.svg"
+            alt=""
+            className="w-4 h-4"
+          />
+        </a>
       </div>
       <div className="w-12/12 mx-auto my-6">
         <img
@@ -208,9 +231,9 @@ function FlowPage() {
         第 3 階段 : 成果影片決選
       </h2>
       <div>
-        邀請影視產業界、學者及專家組成評審委員會，進行最終決審，並於頒獎典禮上頒發獎金、獎狀與講座。
+        邀請影視產業界、學者及專家組成評審委員會，進行最終決審，並暫定114年7月26日需出席頒獎典禮，頒發獎金與獎狀。
       </div>
-      <div className="bg-gray-800/80 py-2 text-center mb-8 tracking-wider">
+      <div className="bg-gray-800/80 py-2 text-center mb-8 tracking-wider  font-bold">
         繳交影片格式
       </div>
       <div className="grid grid-cols-2 gap-4 justify-center items-center w-12/12 mx-auto my-6">
