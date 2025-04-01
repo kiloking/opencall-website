@@ -72,7 +72,7 @@ function RegisterPage() {
           </div>
           <div className="flex gap-10 mt-10 mb-10">
             <div className="flex flex-col gap-4">
-              <div className="w-1/2  mx-auto h-auto min-h-20 flex justify-center items-center">
+              <div className="w-1/2 aspect-video  mx-auto h-auto min-h-20 flex justify-center items-center">
                 <img
                   src="https://web.forestdev.work/chiayi/opencall/r05.svg"
                   alt="group"
@@ -86,7 +86,7 @@ function RegisterPage() {
               </div>
             </div>
             <div className="flex flex-col gap-4">
-              <div className="w-1/2 mx-auto h-auto min-h-20 flex justify-center items-center">
+              <div className="w-1/2 aspect-video  mx-auto h-auto min-h-20 flex justify-center items-center">
                 <img
                   src="https://web.forestdev.work/chiayi/opencall/r06.svg"
                   alt="group"
@@ -122,15 +122,16 @@ function RegisterPage() {
         <div className="flex items-center gap-2 mb-6">
           <Dot size={26} color="#30E2DD" />
           <div className="w-[90%]  leading-6">
-            若入圍者當中有未滿18歲之成員，需由法定代理人簽「未滿18歲參賽同意書」並繳交正本，未補繳者將喪失資格。
+            經評選入選者，需同意簽屬20小時的免費監製及培育課程之切結書，並實際完成12-30分鐘成果影片，含片頭、片尾。
           </div>
         </div>
         <div className="flex items-center gap-2 mb-6">
           <Dot size={26} color="#30E2DD" />
           <div className="w-[90%]  leading-6">
-            經評選入選者，需同意簽屬20小時的免費監製及培育課程之切結書，並實際完成12-30分鐘成果影片，含片頭、片尾。
+            若入圍者當中有未滿18歲之成員，需由法定代理人簽「未滿18歲參賽同意書」並繳交正本，未補繳者將喪失資格。
           </div>
         </div>
+
         <div className="flex items-center gap-2 mb-6">
           <Dot size={26} color="#30E2DD" />
           <div className="w-[90%]  leading-6">

@@ -13,11 +13,12 @@ function App() {
   return (
     <div className="min-h-screen  text-white">
       <Navbar />
-
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
       {/* Main Content */}
       <main className="pt-16 w-8/12 mx-auto">
         <Routes>
-          <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/flow" element={<FlowPage />} />
           <Route path="/register" element={<RegisterPage />} />

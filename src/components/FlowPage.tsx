@@ -26,11 +26,7 @@ function FlowPage() {
       icon: "https://web.forestdev.work/chiayi/opencall/paper.svg",
       etc: "",
     },
-    {
-      title: "後續故事內容發展方向\n(500字內)",
-      icon: "https://web.forestdev.work/chiayi/opencall/paper.svg",
-      etc: "",
-    },
+
     {
       title: "片花",
       icon: "https://web.forestdev.work/chiayi/opencall/paper_y.svg",
@@ -185,7 +181,7 @@ function FlowPage() {
       <h2 className="text-xl mb-8 border-l-4 border-[#30E2DD]  text-[#30E2DD] pl-4 flex items-center">
         第 2 階段 : 協力產製
       </h2>
-      <div className="text-sm mb-4">
+      <div className="text-base mb-4">
         入選者 從中完成「20小時」的培育時數累積之規定需求。
       </div>
       <div className="grid grid-cols-3 gap-4 justify-center items-center w-12/12 mx-auto my-6">
@@ -230,7 +226,7 @@ function FlowPage() {
       <h2 className="text-xl mb-8 border-l-4 border-[#30E2DD]  text-[#30E2DD] pl-4 flex items-center">
         第 3 階段 : 成果影片決選
       </h2>
-      <div>
+      <div className="text-base mb-4">
         邀請影視產業界、學者及專家組成評審委員會，進行最終決審，並暫定114年7月26日需出席頒獎典禮，頒發獎金與獎狀。
       </div>
       <div className="bg-gray-800/80 py-2 text-center mb-8 tracking-wider  font-bold">

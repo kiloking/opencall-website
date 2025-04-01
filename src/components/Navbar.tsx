@@ -7,7 +7,7 @@ const navItems = [
   { name: "嘉義短片獎", path: "/about" },
   { name: "徵件流程", path: "/flow" },
   { name: "報名方式", path: "/register" },
-  { name: "製作金補助", path: "/funding" },
+  { name: "製作費補助", path: "/funding" },
   { name: "時間流程", path: "/timeline" },
   { name: "常見Q&A", path: "/faq" },
   { name: "聯絡我們", path: "/contact" },

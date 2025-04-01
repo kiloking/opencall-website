@@ -25,7 +25,7 @@ function ContactPage() {
                 </svg>
                 <div>
                   <div className="font-medium">電話</div>
-                  <div>0966-880-270</div>
+                  <div>0966-880-270(黃小姐)</div>
                 </div>
               </div>
 
@@ -96,10 +96,34 @@ function ContactPage() {
               </div>
             </div>
 
-            <div className="mt-8">
-              <h2 className="text-xl mb-6 text-cyan-400">指導單位</h2>
-              <h2 className="text-xl mb-6 text-cyan-400">主辦單位</h2>
-              <h2 className="text-xl mb-6 text-cyan-400">執行單位</h2>
+            <div className="mt-8  bg-white/90  p-6 rounded-lg flex flex-col gap-6">
+              <div>
+                <h2 className="text-xl mb-6 text-cyan-800">指導單位</h2>
+                <div className="flex justify-center w-3/4 ">
+                  <img
+                    src="https://web.forestdev.work/chiayi/opencall/logo01.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div>
+                <h2 className="text-xl mb-6 text-cyan-800">主辦單位</h2>
+                <div className="flex justify-center w-3/4 ">
+                  <img
+                    src="https://web.forestdev.work/chiayi/opencall/logo02.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div>
+                <h2 className="text-xl mb-6 text-cyan-800">執行單位</h2>
+                <div className="flex justify-center w-3/4 ">
+                  <img
+                    src="https://web.forestdev.work/chiayi/opencall/logo03.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
           </div>
 
@@ -155,7 +179,15 @@ function ContactPage() {
           <h2 className="text-xl mb-6 text-cyan-400">位置地圖</h2>
           <div className="bg-gray-800 h-80 rounded-lg flex items-center justify-center">
             {/* 這裡可以嵌入 Google Maps 或其他地圖服務 */}
-            <div className="text-gray-400">地圖載入中...</div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.211886541369!2d120.43275259999999!3d23.488876400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e9680873d3e6d%3A0xfa8a075a0d9b27b6!2zNjAw5ZiJ576p5biC6KW_5Y2A5YyX6IiI6KGXNDYw6Jmf!5e0!3m2!1szh-TW!2stw!4v1743506237311!5m2!1szh-TW!2stw"
+              width="100%"
+              height="100%"
+              style={{ border: "0" }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
