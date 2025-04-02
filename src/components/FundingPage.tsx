@@ -12,7 +12,7 @@ function FundingPage() {
       </div>
       <div className="w-full">
         <img
-          src="https://web.forestdev.work/chiayi/opencall/f01.svg"
+          src="https://web.forestdev.work/chiayi/opencall/f01_v1.svg"
           alt="group"
           className="w-full"
         />
