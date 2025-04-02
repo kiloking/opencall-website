@@ -3,10 +3,10 @@ import ReactPlayer from "react-player";
 function AboutPage() {
   return (
     <div className=" ">
-      {/* 微件宗旨 Section */}
+      {/* 徵件宗旨 Section */}
       <section className="mb-16 mt-8">
         <h2 className="text-xl mb-8 border-l-4 border-[#30E2DD]  text-[#30E2DD] pl-4 flex items-center">
-          微件宗旨
+          徵件宗旨
         </h2>
         <div className="flex md:flex-row items-center justify-around gap-3">
           <div className="relative w-[60%] ">
@@ -30,10 +30,10 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* 微件主題 Section */}
+      {/* 徵件主題 Section */}
       <section className="mb-16">
         <h2 className="text-xl mb-8 border-l-4 border-[#30E2DD]  text-[#30E2DD] pl-4 flex items-center">
-          微件主題
+          徵件主題
         </h2>
         <div className="text-gray-300 leading-relaxed mb-8">
           歡迎全台對影像創作充滿熱情的朋友，以鏡頭主動發掘或創造嘉義市的文化風貌、職人精神、地方社區故事與特色活動紀實。無論是人文風情、創業歷程、地方職人、自然景觀、地標建築，或是日常生活的精彩片段，皆鼓勵運用視覺創意與敘事張力，呈現嘉義的獨特意象與文化內涵，訴說屬於嘉義的精彩篇章。
