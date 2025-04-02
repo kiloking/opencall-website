@@ -5,7 +5,10 @@ function TimelinePage() {
         報名流程
       </h2>
       <div className="px-14 py-3">
-        <img src="https://web.forestdev.work/chiayi/opencall/t01.svg" alt="" />
+        <img
+          src="https://web.forestdev.work/chiayi/opencall/t01_v2.svg"
+          alt=""
+        />
       </div>
     </section>
   );
