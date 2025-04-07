@@ -60,10 +60,14 @@ function Navbar() {
               儘速報名 <MoveRight />
             </div>
           </div>
-          <button className="bg-[#30E2DD] text-black px-6 py-2 rounded-md flex items-center">
+          <a
+            href="https://docs.google.com/forms/d/1HsD8Sp3s3c46_NuGr4-LURbJonFmCmEcJRh8fqhowBU/viewform?edit_requested=true"
+            className="bg-[#30E2DD] text-black px-6 py-2 rounded-md flex items-center"
+            target="_blank"
+          >
             <ScrollText className="mr-2" />
             報名專區
-          </button>
+          </a>
         </div>
       </div>
     </nav>

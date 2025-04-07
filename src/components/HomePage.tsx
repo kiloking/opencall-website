@@ -6,7 +6,7 @@ function HomePage() {
       {/* 背景影片 */}
       <div className="absolute inset-0 scale-[1.1]">
         <ReactPlayer
-          url="https://www.youtube.com/watch?v=Dg3quoxp8ds"
+          url="https://www.youtube.com/watch?v=cYvGpqvHz7o"
           playing={true}
           loop={true}
           muted={true}

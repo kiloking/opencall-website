@@ -1,4 +1,4 @@
-import { Dot } from "lucide-react";
+import { Dot, Paperclip } from "lucide-react";
 
 function RegisterPage() {
   return (
@@ -285,11 +285,23 @@ function RegisterPage() {
         <h2 className="text-xl mb-8 border-l-4 border-[#30E2DD]  text-[#30E2DD] pl-4 flex items-center">
           附件下載
         </h2>
-        <div>
-          <img
-            src="https://web.forestdev.work/chiayi/opencall/r07.png"
-            alt="group"
-          />
+        <div className="flex gap-4">
+          <a
+            className="underline aspect-square bg-white/30 w-40 p-5 text-white text-center flex items-center justify-center font-bold flex-col gap-2"
+            href="https://web.forestdev.work/chiayi/opencall/doc/法定代理人監護人同意書.docx"
+            target="_blank"
+          >
+            <Paperclip size={30} />
+            法定代理人監護人同意書.docx
+          </a>
+          <a
+            className="underline aspect-square bg-white/30 w-40 p-5 text-white text-center flex items-center justify-center font-bold flex-col gap-2"
+            href="https://web.forestdev.work/chiayi/opencall/doc/學生組在學證明.docx"
+            target="_blank"
+          >
+            <Paperclip size={30} />
+            學生組在學證明.docx
+          </a>
         </div>
       </div>
     </section>

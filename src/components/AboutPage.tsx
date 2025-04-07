@@ -12,7 +12,7 @@ function AboutPage() {
           <div className="relative w-[60%] ">
             <div className=" pt-[56.25%] relative ">
               <ReactPlayer
-                url="https://www.youtube.com/watch?v=Dg3quoxp8ds"
+                url="https://www.youtube.com/watch?v=cYvGpqvHz7o"
                 className=" absolute top-0 left-0 w-full h-full "
                 width="100%"
                 height="100%"

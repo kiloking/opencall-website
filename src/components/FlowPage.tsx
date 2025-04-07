@@ -206,8 +206,9 @@ function FlowPage() {
       <div className="bg-gray-800/80 py-2 text-center mb-8 tracking-wider font-bold flex items-center justify-between gap-2 px-4">
         <div>監製名單</div>
         <a
-          href="https://web.forestdev.work/chiayi/opencall/master.png"
+          href="https://web.forestdev.work/chiayi/opencall/doc/課表Final.pdf"
           className="flex items-center gap-2 underline"
+          target="_blank"
         >
           影視音基地課表
           <img
