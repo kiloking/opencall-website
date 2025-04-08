@@ -3,9 +3,9 @@ import { Info } from "lucide-react";
 function ContactPage() {
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-2xl mb-8 border-l-4 border-cyan-400 pl-4 flex items-center">
-        <span className="text-cyan-400 mr-2">|</span> 聯絡我們
-      </h1>
+      <h2 className="text-xl mb-8 border-l-4 border-[#30E2DD]  text-[#30E2DD] pl-4 flex items-center">
+        聯絡我們
+      </h2>
       <div className="bg-gray-900 p-8 rounded-lg">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
@@ -178,7 +178,7 @@ function ContactPage() {
           <div className="bg-gray-800 h-80 rounded-lg flex items-center justify-center">
             {/* 這裡可以嵌入 Google Maps 或其他地圖服務 */}
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.211886541369!2d120.43275259999999!3d23.488876400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e9680873d3e6d%3A0xfa8a075a0d9b27b6!2zNjAw5ZiJ576p5biC6KW_5Y2A5YyX6IiI6KGXNDYw6Jmf!5e0!3m2!1szh-TW!2stw!4v1743506237311!5m2!1szh-TW!2stw"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.211886541369!2d120.43275259999999!3d23.488876400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e97e447e8790d%3A0xeefdd10b33b77622!2z5ZiJ576p5biC5b2x6KaW6Z-z5Z-65Zyw!5e0!3m2!1szh-TW!2stw!4v1744104191509!5m2!1szh-TW!2stw"
               width="100%"
               height="100%"
               style={{ border: "0" }}

@@ -1,9 +1,9 @@
 function FAQPage() {
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-2xl mb-8 border-l-4 border-cyan-400 pl-4 flex items-center">
-        <span className="text-cyan-400 mr-2">|</span> 常見Q&A
-      </h1>
+      <h2 className="text-xl mb-8 border-l-4 border-[#30E2DD]  text-[#30E2DD] pl-4 flex items-center">
+        常見Q&A
+      </h2>
       <div className="bg-gray-900 p-8 rounded-lg">
         <div className="space-y-8">
           <div>
