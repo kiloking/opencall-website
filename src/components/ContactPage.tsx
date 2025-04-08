@@ -1,3 +1,5 @@
+import { Info } from "lucide-react";
+
 function ContactPage() {
   return (
     <div className="container mx-auto px-4 py-8">
@@ -94,34 +96,30 @@ function ContactPage() {
                   <div>週六至週日 13:30-17:00</div>
                 </div>
               </div>
-            </div>
-
-            <div className="mt-8  bg-white/90  p-6 rounded-lg flex flex-col gap-6">
-              <div>
-                <h2 className="text-xl mb-6 text-cyan-800">指導單位</h2>
-                <div className="flex justify-center w-3/4 ">
-                  <img
-                    src="https://web.forestdev.work/chiayi/opencall/logo01.svg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div>
-                <h2 className="text-xl mb-6 text-cyan-800">主辦單位</h2>
-                <div className="flex justify-center w-3/4 ">
-                  <img
-                    src="https://web.forestdev.work/chiayi/opencall/logo02.svg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div>
-                <h2 className="text-xl mb-6 text-cyan-800">執行單位</h2>
-                <div className="flex justify-center w-3/4 ">
-                  <img
-                    src="https://web.forestdev.work/chiayi/opencall/logo03.svg"
-                    alt=""
-                  />
+              <div className="flex items-start">
+                <Info className="w-6 h-6 text-cyan-400 mr-3 flex-shrink-0" />
+                <div>
+                  <div className="font-medium">其他參考</div>
+                  <div className="flex gap-2 flex-col mt-2">
+                    <a
+                      href="https://cabcy.chiayi.gov.tw/web/Cabcych/index"
+                      className="text-cyan-400 hover:text-cyan-300"
+                    >
+                      嘉義市政府文化局
+                    </a>
+                    <a
+                      href="https://film.chiayi.gov.tw/"
+                      className="text-cyan-400 hover:text-cyan-300"
+                    >
+                      嘉義市協拍中心 | 場景簿
+                    </a>
+                    <a
+                      href="https://youthsoullab.chiayi.gov.tw/"
+                      className="text-cyan-400 hover:text-cyan-300"
+                    >
+                      嘉義市有事青年實驗室
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -188,6 +186,42 @@ function ContactPage() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
+          </div>
+          <div className="mt-8 w-full grid grid-cols-3  bg-white/90  p-6 rounded-lg   gap-10">
+            <div className="items-center flex gap-4">
+              <h2 className="text-base  text-cyan-800 whitespace-nowrap border-r-2 border-cyan-800 pr-2">
+                指導單位
+              </h2>
+              <div className="flex justify-center w-full  ">
+                <img
+                  src="https://web.forestdev.work/chiayi/opencall/logo01.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className=" items-center flex gap-4  ">
+              <h2 className="text-base  text-cyan-800 whitespace-nowrap border-r-2 border-cyan-800 pr-2">
+                主辦單位
+              </h2>
+              <div className="flex justify-center w-full">
+                <img
+                  src="https://web.forestdev.work/chiayi/opencall/logo02.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="items-center flex gap-4">
+              <h2 className="text-base  text-cyan-800 whitespace-nowrap border-r-2 border-cyan-800 pr-2">
+                執行單位
+              </h2>
+              <div className="flex justify-center w-full ">
+                <img
+                  src="https://web.forestdev.work/chiayi/opencall/logo03.svg"
+                  alt=""
+                  className="w-full"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

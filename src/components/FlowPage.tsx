@@ -1,4 +1,4 @@
-import { Dot } from "lucide-react";
+import { Dot, ExternalLink } from "lucide-react";
 function FlowPage() {
   const step1 = [
     {
@@ -62,7 +62,7 @@ function FlowPage() {
   ];
   const step2 = [
     {
-      title: "常態課20堂",
+      title: "常態課40堂",
       icon: "https://web.forestdev.work/chiayi/opencall/icon02.svg",
     },
     {
@@ -90,7 +90,7 @@ function FlowPage() {
     },
     {
       title:
-        "影片字幕或口白，以本國語言(國語或臺與)為宜，可搭配其他語言，並加註中文字幕。",
+        "影片字幕或口白，以本國語言(國語或臺語)為宜，可搭配其他語言，並加註中文字幕。",
       icon: "https://web.forestdev.work/chiayi/opencall/icon09.svg",
     },
     {
@@ -117,13 +117,13 @@ function FlowPage() {
             alt="先審查，後拍攝"
           />
         </div>
-        <div className=" text-lg ">「先審查，後拍攝」</div>
+        <div className=" text-lg font-bold ">「先審查，後拍攝」</div>
       </div>
       <h2 className="text-xl mb-8 border-l-4 border-[#30E2DD]  text-[#30E2DD] pl-4 flex items-center">
         第 1 階段 : 企劃提案
       </h2>
       <div className="text-sm mb-4">
-        報名者除基本資料填寫及同意書簽屬外，需繳交「片名」、「片
+        報名者只需要填寫報名表單上的相關問題，包含「片名」、「片
         種」、「製作立意-500字內」、「故事內容簡述-500字內」、「人物介紹、腳本、分鏡、場景等設定-500字內」、「嘉義元素說明推廣效益評估-500字內」、「片花(選填)」、「其他補充或加分事項-500字內(選填，並可提供雲端連結)」
       </div>
       <div className="py-4">
@@ -182,7 +182,15 @@ function FlowPage() {
         第 2 階段 : 協力產製
       </h2>
       <div className="text-base mb-4">
-        入選者 從中完成「20小時」的培育時數累積之規定需求。
+        入選者 從中完成「20小時」的培育時數累積之規定需求。{" "}
+        <a
+          href="https://web.forestdev.work/chiayi/opencall/doc/課表Final.pdf"
+          className="flex items-center gap-1  text-cyan-400 hover:text-cyan-300"
+          target="_blank"
+        >
+          詳見影視音基地課表
+          <ExternalLink size={16} />
+        </a>
       </div>
       <div className="grid grid-cols-3 gap-4 justify-center items-center w-12/12 mx-auto my-6">
         {step2.map((item) => (
@@ -194,29 +202,18 @@ function FlowPage() {
           </div>
         ))}
       </div>
+
+      <div className="bg-gray-800/80 py-2 text-center mt-8 mb-8 tracking-wider font-bold flex items-center justify-center gap-2 px-4">
+        <div>監製名單</div>
+      </div>
       <div className="flex gap-4 justify-center items-center w-10/12 mx-auto my-6">
         <div className=" rounded-full text-zinc-800 bg-sky-400 py-2 px-4 whitespace-nowrap">
           協力監製
         </div>
         <div className="text-base">
-          每位入選者將配選一位監製，透過線上或線下方式協助控管進度、解決問題，確保最終完整的
+          每組入選者將配選一位監製，透過線上或線下方式協助控管進度、解決問題，確保最終完整的
           12 分鐘影片可以順利完成，並達到最佳呈現效果。
         </div>
-      </div>
-      <div className="bg-gray-800/80 py-2 text-center mb-8 tracking-wider font-bold flex items-center justify-between gap-2 px-4">
-        <div>監製名單</div>
-        <a
-          href="https://web.forestdev.work/chiayi/opencall/doc/課表Final.pdf"
-          className="flex items-center gap-2 underline"
-          target="_blank"
-        >
-          影視音基地課表
-          <img
-            src="https://web.forestdev.work/chiayi/opencall/icon05.svg"
-            alt=""
-            className="w-4 h-4"
-          />
-        </a>
       </div>
       <div className="w-12/12 mx-auto my-6">
         <img

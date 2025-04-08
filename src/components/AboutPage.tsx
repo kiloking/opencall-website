@@ -1,4 +1,4 @@
-import ReactPlayer from "react-player";
+import { ExternalLink } from "lucide-react";
 
 function AboutPage() {
   return (
@@ -10,21 +10,34 @@ function AboutPage() {
         </h2>
         <div className="flex md:flex-row items-center justify-around gap-3">
           <div className="relative w-[60%] ">
-            <div className=" pt-[56.25%] relative ">
+            {/* <div className=" pt-[56.25%] relative ">
               <ReactPlayer
                 url="https://www.youtube.com/watch?v=cYvGpqvHz7o"
                 className=" absolute top-0 left-0 w-full h-full "
                 width="100%"
                 height="100%"
               />
-            </div>
+            </div> */}
+            <img
+              src="https://web.forestdev.work/chiayi/opencall/vi01.jpg"
+              alt=""
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="w-full md:w-1/2 pl-4">
             <p className="text-gray-300 leading-relaxed">
-              廣邀全台對短片創作充滿熱情的影像工作者，不論是展現個人影像風格、呈現嘉義的在地場域，或探索各領域的多元視角，皆歡迎以動人且具吸引力的影片，讓觀眾透過影像感受嘉義豐厚的文化底蘊。
+              廣邀全台對短片創作充滿熱情的影像工作者踴躍參與！無論是展現獨特的個人風格、描繪嘉義市在地風貌，或從多元視角探索不同主題，只要能以動人且具吸引力的影片，讓觀眾透過影像感受嘉義市深厚的文化底蘊，我們都熱烈歡迎。
             </p>
             <p className="text-gray-300 leading-relaxed mt-4">
-              提案報名無需提交完整影片，只要具備明確的創意構想與執行計畫，114年7月完成至少12分鐘的成片，即可參與，後續將協力完成製作，共同打造精彩作品。
+              嘉映短片徵件強調{" "}
+              <span className="font-bold text-[#30E2DD]">
+                「先企劃，後拍攝」
+              </span>
+              ，因此提案報名階段無需提交完整影片!
+              僅需具備明確的創意構想與執行計畫，只要能於114年7月15日前完成一部12-30分鐘的成片，即具參與資格。入選提案將獲得協力資源，一同完成精彩作品。
+            </p>
+            <p className="text-gray-300 leading-relaxed mt-4">
+              嘉映短片徵件：Roll！打磨嘉義這一場，期待與您將嘉義市的平凡，透過影像打磨成精彩，嘉義上鏡，故事開場!!
             </p>
           </div>
         </div>
@@ -53,26 +66,26 @@ function AboutPage() {
               title: "人文風情",
               img: "p01.jpg",
               description:
-                "捕捉嘉義市獨特的人文風情，例如：歷史古蹟（嘉義舊監獄、城隍廟）、民俗文化（嘉義香花迎媽祖、嘉義布袋戲）、宗教信仰、木都等，展現嘉義市豐富的文化底蘊。",
+                "歷史古蹟：如嘉義舊監獄、嘉義城隍廟、鐵道倉庫、林業遺址等，映照城市歷史脈絡\n民俗文化：如嘉義香花迎媽祖、布袋戲、傳統工藝、在地慶典，展現在地文化的延續與活力\n宗教信仰：廟宇建築、美學風格、信眾活動與信仰傳承\n木都印象：探索嘉義作為木材重鎮的歷史記憶，從林業產業到木藝文化，體現城市獨有的文化象徵",
             },
             {
               title: "地標建築",
               img: "p02.png",
               description:
-                "取景嘉義市的知名地標，例如：東門派出所、嘉義鐵道藝術村、北門車站、文化公園、阿里山林業村與檜意森活村等，展現嘉義市的城市景觀與歷史特色。\n影像內容可融入因應社會需求而進行的地標活化或再利用案例，例如北門車站周邊的文創與餐飲空間。",
+                "知名地標：如東門派出所、嘉義鐵道藝術村、北門車站、文化公園、阿里山林業村與檜意森活村等，皆為展現嘉義城市特色與歷史底蘊的重要場域\n地標活化與再利用案例：例如北門車站周邊結合文創、展演與餐飲空間的再生利用，反映嘉義在地文化與城市更新的實踐\n建築與人的互動：探索市民如何與地標共處，如何在這些場域中生活、工作與記憶",
             },
 
             {
               title: "自然景觀",
               img: "p04.jpg",
               description:
-                "取景紀錄嘉義市的自然美景，例如：蘭潭風景區、嘉義植物園、嘉義公園（含射日塔區域）、中央噴水圓環等，展現嘉義市自然與城市交融的風光。",
+                "蘭潭風景區：湖光山色、晨昏倒影，四季更迭中展現靜謐之美\n嘉義植物園與嘉義公園（含射日塔區域）：綠意環繞中的歷史與生活脈動，是市民休憩與活動的重要場域\n中央噴水圓環與市區綠帶：街景中的綠意與流動水景，體現城市空間的生命力與節奏感",
             },
             {
               title: "生活故事",
               img: "p03.jpg",
               description:
-                "透過影像紀錄嘉義市的市井風情，從文化路夜市、傳統市場到社區活動，細膩呈現市民的生活樣貌與獨特態度。挖掘只有在地人熟知的私房角落，如隱藏版咖啡館、特色文創小店，或是嘉義人最愛的火雞肉飯早餐新風貌。\n此外，也關注「嘉義有事青年」計畫中的創業故事，探索青年如何結合地方文化、歷史與現代商業模式，打造獨具嘉義特色的品牌，展現這座城市的活力與創新。",
+                "城市日常風景：文化路夜市的熱鬧節奏、傳統市場的熟悉喧囂、市區街頭的庶民風景與社區活動現場；\n私房在地角落：如隱藏於巷弄間的老屋咖啡館、風格獨具的文創小店、融合創意與傳統的日常場景，以及嘉義人最愛的火雞肉飯早餐文化；\n青年創業故事：「嘉義有事青年」等青年返鄉創業案例，展現青年如何結合地方文化、歷史記憶與現代商業模式，打造屬於嘉義的品牌與生活風格；\n人與地方的關係：透過人物故事、街頭互動、社區連結等視角，展現人如何在城市中生活、成長與實現夢想。",
             },
           ].map((item) => (
             <div
@@ -121,7 +134,7 @@ function AboutPage() {
           歷屆花絮
         </h2>
         <div className="relative bg-gray-800 p-4">
-          <button className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full">
+          {/* <button className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full">
             <svg
               className="w-6 h-6"
               fill="none"
@@ -135,7 +148,7 @@ function AboutPage() {
                 d="M15 19l-7-7 7-7"
               />
             </svg>
-          </button>
+          </button> */}
 
           <div className="flex justify-center gap-4">
             <div className="w-1/3">
@@ -164,7 +177,7 @@ function AboutPage() {
             </div>
           </div>
 
-          <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full">
+          {/* <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full">
             <svg
               className="w-6 h-6"
               fill="none"
@@ -178,8 +191,19 @@ function AboutPage() {
                 d="M9 5l7 7-7 7"
               />
             </svg>
-          </button>
+          </button> */}
         </div>
+
+        <button className="bg-[#30E2DD] text-black px-6 py-2 rounded-md flex items-center mx-auto mt-3">
+          <a
+            href="https://www.youtube.com/@%E5%98%89%E7%BE%A9%E5%B8%82%E5%BD%B1%E8%A6%96%E9%9F%B3%E5%B0%8F%E7%B5%84/videos"
+            target="_blank"
+            className="flex items-center gap-2"
+          >
+            第一屆嘉義市短片獎入圍作品
+            <ExternalLink size={16} />
+          </a>
+        </button>
       </section>
     </div>
   );

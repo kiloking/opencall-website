@@ -8,7 +8,10 @@ function FundingPage() {
         入 選
       </div>
       <div className="my-4">
-        入選製作費補助:入選者完成切結書簽署，並於114年7月5日前繳交12-30分鐘成片，社會組享有新台幣20,000元，學生組10,000元的基本製作費資助
+        入選製作費補助:入選者在完成切結書簽署後，需於{" "}
+        <span className=" font-black">114年7月15日前</span>{" "}
+        提交時長12至30分鐘的成片作品。社會組可獲得新台幣 20,000
+        元的入選製作費補助;學生組則享有新台幣 10,000 元的入選製作費補助。
       </div>
       <div className="w-full">
         <img
@@ -17,11 +20,13 @@ function FundingPage() {
           className="w-full"
         />
       </div>
-      <div className="font-bold rounded-full bg-[#30E2DD] text-black p-2 px-4 w-40 mb-2 flex justify-center items-center">
-        決選製作輔導費
+      <div className="font-bold rounded-full bg-[#30E2DD] text-black p-2 px-4 w-25 mb-2 flex justify-center items-center">
+        決 選
       </div>
       <div className="my-4">
-        針對入選者作品，再從中進行決選，頒發決選製作輔導費
+        針對入選者作品，再從中進行決選，預期{" "}
+        <span className=" font-black">114年7月26日</span>{" "}
+        進行頒獎典禮及頒發決選製作輔導費
       </div>
       <div className="w-full flex gap-14">
         <div className="w-1/5">

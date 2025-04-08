@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const navItems = [
   { name: "首頁", path: "/" },
-  { name: "嘉義短片獎", path: "/about" },
+  { name: "嘉映短片徵件", path: "/about" },
   { name: "徵件流程", path: "/flow" },
   { name: "報名方式", path: "/register" },
   { name: "製作費補助", path: "/funding" },
@@ -14,7 +14,7 @@ const navItems = [
 ];
 
 function Navbar() {
-  const [activeTab, setActiveTab] = useState("嘉義短片獎");
+  const [activeTab, setActiveTab] = useState("嘉映短片徵件");
   const location = useLocation();
 
   // 根據當前路徑設置活動標籤
@@ -29,13 +29,7 @@ function Navbar() {
   return (
     <nav className="fixed top-0 w-full bg-white/10 z-50 border-b border-gray-800">
       <div className="container mx-auto flex justify-between items-center">
-        <div>
-          <img
-            src="https://web.forestdev.work/chiayi/opencall/logo.svg"
-            alt=""
-            className="w-[120px]"
-          />
-        </div>
+        <div className="text-2xl font-bold">嘉映短片徵件</div>
         <div className="flex">
           {navItems.map((item) => (
             <Link

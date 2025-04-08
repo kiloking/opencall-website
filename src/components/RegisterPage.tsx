@@ -15,7 +15,13 @@ function RegisterPage() {
             <div>
               分為{" "}
               <span className="text-[#30E2DD]">「學生組」或「社會組」</span>
-              二擇一，皆採網路報名。
+              二擇一，皆採{" "}
+              <a
+                href="https://docs.google.com/forms/d/1HsD8Sp3s3c46_NuGr4-LURbJonFmCmEcJRh8fqhowBU/edit"
+                className="text-[#30E2DD] hover:text-cyan-300"
+              >
+                網路報名。
+              </a>
               <br />
               (每人限報一組別)
             </div>
@@ -35,7 +41,7 @@ function RegisterPage() {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 mt-4">
           <div className="w-[60%]  pr-[10%]">
             <div className="font-bold rounded-full bg-[#30E2DD] text-black p-2 px-4 w-25 mb-2 flex justify-center items-center">
               報名人數
@@ -72,13 +78,13 @@ function RegisterPage() {
           </div>
           <div className="flex gap-10 mt-10 mb-10">
             <div className="flex flex-col gap-4">
-              <div className="w-1/2 aspect-video  mx-auto h-auto min-h-20 flex justify-center items-center">
+              <div className="w-1/2 aspect-video  mx-auto  h-22 flex justify-center items-center ">
                 <img
                   src="https://web.forestdev.work/chiayi/opencall/r05.svg"
                   alt="group"
                 />
               </div>
-              <div>
+              <div className="">
                 <span className="text-[#30E2DD]">
                   參賽者報名「學生組」，團隊報名皆需為學生
                 </span>
@@ -86,7 +92,7 @@ function RegisterPage() {
               </div>
             </div>
             <div className="flex flex-col gap-4">
-              <div className="w-1/2 aspect-video  mx-auto h-auto min-h-20 flex justify-center items-center">
+              <div className="w-1/2 aspect-video  mx-auto h-22 flex justify-center items-center ">
                 <img
                   src="https://web.forestdev.work/chiayi/opencall/r06.svg"
                   alt="group"
@@ -141,7 +147,7 @@ function RegisterPage() {
         <div className="flex items-center gap-2 mb-6">
           <Dot size={26} color="#30E2DD" />
           <div className="w-[90%]  leading-6">
-            參加徵稿之作品禁止涉及色情、暴力、毀謗、人身攻擊、宗教議題、政治議題，禁止侵害他人隱私權或妨礙社會正當風俗及公共秩序作品或違反中華民國相關法令規定等情事。若有違反，除得獎者應自負法律責任外，主辦機關得取消其得獎資格，並追回其已領得之獎品。
+            參加徵稿之作品禁止涉及色情、暴力、毀謗、人身攻擊、政治議題，禁止侵害他人隱私權或妨礙社會正當風俗及公共秩序作品或違反中華民國相關法令規定等情事。若有違反，除得獎者應自負法律責任外，主辦機關得取消其得獎資格，並追回其已領得之獎品。
           </div>
         </div>
         <div className="flex items-center gap-2 mb-6">
@@ -277,7 +283,7 @@ function RegisterPage() {
             15
           </div>
           <div className="w-[90%]  leading-6">
-            頒獎典禮日期地點待定，主辦方將信件通知頒獎日。
+            頒獎典禮日期暫定114年7月26日，正式地點與日期，將由主辦方以信件另行通知。
           </div>
         </div>
       </div>
