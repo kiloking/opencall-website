@@ -109,7 +109,7 @@ function FlowPage() {
 
   return (
     <section className="mb-16 mt-8">
-      <div className=" rounded-full bg-[#FBB03B] flex items-center justify-center text-black gap-2 w-[30%] mx-auto">
+      <div className=" rounded-full bg-[#FBB03B] flex items-center justify-center text-black gap-2 w-[80%] md:w-[30%] mx-auto mb-4 md:mb-0 ">
         <div className="w-12 h-12  flex items-center justify-center">
           <img
             src="https://web.forestdev.work/chiayi/opencall/s2_icon01.svg"
@@ -126,7 +126,7 @@ function FlowPage() {
         種」、「製作立意-500字內」、「故事內容簡述-500字內」、「人物介紹、腳本、分鏡、場景等設定-500字內」、「嘉義元素說明推廣效益評估-500字內」、「片花(選填)」、「其他補充或加分事項-500字內(選填，並提供公開雲端連結)」
       </div>
       <div className="py-4">
-        <div className="grid grid-cols-5 gap-4 ">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 ">
           {step1.map((item) => (
             <div key={item.title} className="flex flex-col items-center gap-4">
               <div className="w-12 h-12 flex items-center justify-center">
@@ -149,8 +149,8 @@ function FlowPage() {
       <div className="bg-gray-800/80 py-2 text-center mb-8 tracking-wider">
         評分標準
       </div>
-      <div className="flex gap-4 justify-evenly items-center">
-        <div className="flex flex-col gap-8 ">
+      <div className="flex flex-col md:flex-row gap-4 justify-evenly items-center">
+        <div className="flex flex-col gap-8 w-full md:w-1/2">
           {step1_2.map((item) => (
             <div key={item.title}>
               <div className="text-base text-[#30E2DD] flex items-center ">
@@ -161,14 +161,14 @@ function FlowPage() {
             </div>
           ))}
         </div>
-        <div className="flex flex-col gap-4 w-1/2">
+        <div className="flex flex-col gap-4 w-full md:w-1/2">
           <img
             src="https://web.forestdev.work/chiayi/opencall/chart01.png"
             alt="評分標準"
           />
         </div>
       </div>
-      <div className="flex gap-4 justify-start items-center w-10/12 mx-auto my-6">
+      <div className="flex flex-col md:flex-row gap-4 justify-start items-center w-10/12 mx-auto my-6">
         <div className=" rounded-full text-zinc-800 bg-sky-400 py-2 px-4 whitespace-nowrap font-bold">
           初選審查
         </div>
@@ -205,7 +205,7 @@ function FlowPage() {
       <div className="bg-gray-800/80 py-2 text-center mt-8 mb-8 tracking-wider font-bold flex items-center justify-center gap-2 px-4">
         <div>監製名單</div>
       </div>
-      <div className="flex gap-4 justify-start items-center  w-10/12 mx-auto my-6">
+      <div className="flex flex-col md:flex-row gap-4 justify-start items-center  w-10/12 mx-auto my-6">
         <div className=" rounded-full text-zinc-800 bg-sky-400 py-2 px-4 whitespace-nowrap font-bold">
           協力監製
         </div>
@@ -229,7 +229,7 @@ function FlowPage() {
       <div className="bg-gray-800/80 py-2 text-center mb-8 tracking-wider  font-bold">
         繳交影片格式
       </div>
-      <div className="grid grid-cols-2 gap-4 justify-center items-center w-12/12 mx-auto my-6">
+      <div className="grid md:grid-cols-2 gap-4 justify-center items-center w-12/12 mx-auto my-6">
         {step3.map((item) => (
           <div key={item.title} className="flex  items-center gap-4">
             <div className="w-[32%] flex items-center justify-center">

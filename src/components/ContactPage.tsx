@@ -1,6 +1,78 @@
+import { useState, FormEvent, ChangeEvent } from "react";
 import { Info } from "lucide-react";
-
+import { toast } from "sonner";
 function ContactPage() {
+  const [isSending, setIsSending] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSending(true);
+
+    const to = "chiayifilmstudio@gmail.com"; // 更改為您的收件信箱
+    const subject = "【嘉映短片徵件】網站表單";
+    const text = `\n姓名：${formData.name}\n電子信箱：${formData.email}\n主旨：${formData.subject}\n訊息內容：${formData.message}`;
+
+    const sendData = {
+      to: to,
+      subject: subject,
+      text: text,
+    };
+
+    try {
+      const response = await fetch(
+        "https://www.maizizi.vaserver.com/api/mail_api.php",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(sendData),
+        }
+      );
+      console.log(response.ok);
+      if (response.ok) {
+        setIsSending(false);
+        console.log("表單已寄送成功。");
+        toast("表單已寄送成功。", {
+          position: "top-center",
+        });
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        setIsSending(false);
+        toast("表單寄送失敗，請稍後再試。", {
+          position: "top-center",
+        });
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setIsSending(false);
+      toast("表單寄送失敗，請稍後再試。", {
+        position: "top-center",
+      });
+    }
+  };
+
   return (
     <div className="container mx-auto px-4 py-8">
       <h2 className="text-xl mb-8 border-l-4 border-[#30E2DD]  text-[#30E2DD] pl-4 flex items-center">
@@ -127,13 +199,17 @@ function ContactPage() {
 
           <div>
             <h2 className="text-xl mb-6 text-cyan-400">聯絡表單</h2>
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
                 <label className="block text-gray-300 mb-2">姓名</label>
                 <input
                   type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   className="w-full bg-gray-800 border border-gray-700 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400"
                   placeholder="請輸入您的姓名"
+                  required
                 />
               </div>
 
@@ -141,8 +217,12 @@ function ContactPage() {
                 <label className="block text-gray-300 mb-2">電子郵件</label>
                 <input
                   type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   className="w-full bg-gray-800 border border-gray-700 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400"
                   placeholder="請輸入您的電子郵件"
+                  required
                 />
               </div>
 
@@ -150,24 +230,33 @@ function ContactPage() {
                 <label className="block text-gray-300 mb-2">主旨</label>
                 <input
                   type="text"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
                   className="w-full bg-gray-800 border border-gray-700 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400"
                   placeholder="請輸入主旨"
+                  required
                 />
               </div>
 
               <div>
                 <label className="block text-gray-300 mb-2">訊息內容</label>
                 <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   className="w-full bg-gray-800 border border-gray-700 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400 h-32"
                   placeholder="請輸入您的訊息內容"
+                  required
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="bg-cyan-400 text-black px-6 py-2 rounded-md hover:bg-cyan-300 transition-colors"
+                disabled={isSending}
+                className="bg-cyan-400 text-black px-6 py-2 rounded-md hover:bg-cyan-300 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                送出訊息
+                {isSending ? "寄送中..." : "送出訊息"}
               </button>
             </form>
           </div>

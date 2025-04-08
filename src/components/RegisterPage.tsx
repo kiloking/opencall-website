@@ -7,8 +7,8 @@ function RegisterPage() {
         報名流程
       </h2>
       <div className="flex flex-col gap-10 mb-10">
-        <div className="flex items-start gap-4 ">
-          <div className="w-[60%] pr-[10%]">
+        <div className="flex flex-col md:flex-row items-start gap-4 ">
+          <div className="w-full md:w-[60%] pr-[10%]">
             <div className="font-bold rounded-full bg-[#30E2DD] text-black p-2 px-4 w-25 mb-2 flex justify-center items-center">
               報名組別
             </div>
@@ -26,7 +26,7 @@ function RegisterPage() {
               (每人限報一組別)
             </div>
           </div>
-          <div className="w-1/2 flex gap-12">
+          <div className="w-full md:w-1/2 flex gap-12">
             <div>
               <img
                 src="https://web.forestdev.work/chiayi/opencall/r01.png"
@@ -41,8 +41,8 @@ function RegisterPage() {
             </div>
           </div>
         </div>
-        <div className="flex items-start gap-4 mt-4 b">
-          <div className="w-[60%]  pr-[10%]">
+        <div className="flex flex-col md:flex-row items-start gap-4 mt-4 b">
+          <div className="w-full md:w-[60%]  pr-[10%]">
             <div className="font-bold rounded-full bg-[#30E2DD] text-black p-2 px-4 w-25 mb-2 flex justify-center items-center">
               報名人數
             </div>
@@ -55,7 +55,7 @@ function RegisterPage() {
               團隊報名需以指派代表人作為聯絡窗口。
             </div>
           </div>
-          <div className="w-1/2 flex gap-12">
+          <div className="w-full md:w-1/2 flex gap-12">
             <div>
               <img
                 src="https://web.forestdev.work/chiayi/opencall/r03.png"
@@ -76,7 +76,7 @@ function RegisterPage() {
               提醒事項
             </div>
           </div>
-          <div className="flex gap-10 mt-10 mb-10">
+          <div className="flex flex-col md:flex-row gap-10 mt-10 mb-10">
             <div className="flex flex-col gap-4">
               <div className="w-1/2 aspect-video  mx-auto  h-22 flex justify-center items-center ">
                 <img

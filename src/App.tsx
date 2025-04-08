@@ -8,16 +8,18 @@ import FundingPage from "./components/FundingPage";
 import TimelinePage from "./components/TimelinePage";
 import FAQPage from "./components/FAQPage";
 import ContactPage from "./components/ContactPage";
+import { Toaster } from "sonner";
 
 function App() {
   return (
     <div className="min-h-screen  text-white">
+      <Toaster />
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
       </Routes>
       {/* Main Content */}
-      <main className="pt-16 w-8/12 mx-auto">
+      <main className="pt-16 w-11/12 md:w-8/12 mx-auto">
         <Routes>
           <Route path="/about" element={<AboutPage />} />
           <Route path="/flow" element={<FlowPage />} />

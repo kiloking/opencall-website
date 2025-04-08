@@ -21,7 +21,7 @@ function FundingPage() {
           className="w-full"
         />
       </div>
-      <div className="font-bold rounded-full bg-[#30E2DD] text-black p-2 px-4 w-25 mb-2 flex justify-center items-center">
+      <div className="font-bold rounded-full bg-[#30E2DD] text-black p-2 px-4 w-25 mb-2 flex justify-center items-center mt-6 md:mt-0">
         決 選
       </div>
       <div className="my-4">
@@ -29,15 +29,15 @@ function FundingPage() {
         <span className=" font-black">114年7月26日</span>{" "}
         進行頒獎典禮及頒發決選製作輔導費
       </div>
-      <div className="w-full flex gap-14">
-        <div className="w-1/5">
+      <div className="w-full flex flex-col md:flex-row gap-14">
+        <div className="w-1/2  md:w-1/5">
           <img
             src="https://web.forestdev.work/chiayi/opencall/f02.png"
             alt="group"
             className="w-full"
           />
         </div>
-        <div className="w-5/6 flex flex-col gap-10">
+        <div className="w-full md:w-5/6 flex flex-col gap-10">
           <img
             src="https://web.forestdev.work/chiayi/opencall/f04.png"
             alt="group"
@@ -56,15 +56,15 @@ function FundingPage() {
         </div>
       </div>
       <div className="h-[1px] w-full bg-amber-50 my-10"></div>
-      <div className="w-full flex gap-14">
-        <div className="w-1/5">
+      <div className="w-full flex flex-col md:flex-row gap-14">
+        <div className="w-1/2  md:w-1/5">
           <img
             src="https://web.forestdev.work/chiayi/opencall/f03.png"
             alt="group"
             className="w-full"
           />
         </div>
-        <div className="w-5/6 flex flex-col gap-10">
+        <div className="w-full md:w-5/6 flex flex-col gap-10">
           <img
             src="https://web.forestdev.work/chiayi/opencall/f07.png?v=2"
             alt="group"

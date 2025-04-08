@@ -8,8 +8,8 @@ function AboutPage() {
         <h2 className="text-xl mb-8 border-l-4 border-[#30E2DD]  text-[#30E2DD] pl-4 flex items-center">
           徵件宗旨
         </h2>
-        <div className="flex md:flex-row items-center justify-around gap-3">
-          <div className="relative w-[60%] ">
+        <div className="flex flex-col md:flex-row items-center justify-around gap-3">
+          <div className="relative md:w-[60%] ">
             {/* <div className=" pt-[56.25%] relative ">
               <ReactPlayer
                 url="https://www.youtube.com/watch?v=cYvGpqvHz7o"
@@ -68,7 +68,7 @@ function AboutPage() {
           創作方向(參考但不限於以下範圍)
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid md:grid-cols-2 gap-4">
           {[
             {
               title: "人文風情",
@@ -229,8 +229,8 @@ function AboutPage() {
             </svg>
           </button> */}
 
-          <div className="flex justify-center gap-4">
-            <div className="w-1/3">
+          <div className="flex flex-col md:flex-row justify-center gap-4">
+            <div className="w-full md:w-1/3">
               <img
                 src="https://web.forestdev.work/chiayi/opencall/h01.png"
                 alt="第一屆頒獎合照"
@@ -238,7 +238,7 @@ function AboutPage() {
               />
               <p className="text-center mt-2">第一屆頒獎合照</p>
             </div>
-            <div className="w-1/3">
+            <div className="w-full md:w-1/3">
               <img
                 src="https://web.forestdev.work/chiayi/opencall/h02.png"
                 alt="第一屆決選合照"
@@ -246,7 +246,7 @@ function AboutPage() {
               />
               <p className="text-center mt-2">第一屆決選合照</p>
             </div>
-            <div className="w-1/3">
+            <div className="w-full md:w-1/3">
               <img
                 src="https://web.forestdev.work/chiayi/opencall/h03.png"
                 alt="作品放映"
