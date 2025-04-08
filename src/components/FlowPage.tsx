@@ -168,7 +168,7 @@ function FlowPage() {
           />
         </div>
       </div>
-      <div className="flex gap-4 justify-center items-center w-10/12 mx-auto my-6">
+      <div className="flex gap-4 justify-start items-center w-10/12 mx-auto my-6">
         <div className=" rounded-full text-zinc-800 bg-sky-400 py-2 px-4 whitespace-nowrap font-bold">
           初選審查
         </div>
@@ -205,7 +205,7 @@ function FlowPage() {
       <div className="bg-gray-800/80 py-2 text-center mt-8 mb-8 tracking-wider font-bold flex items-center justify-center gap-2 px-4">
         <div>監製名單</div>
       </div>
-      <div className="flex gap-4 justify-center items-center w-10/12 mx-auto my-6">
+      <div className="flex gap-4 justify-start items-center  w-10/12 mx-auto my-6">
         <div className=" rounded-full text-zinc-800 bg-sky-400 py-2 px-4 whitespace-nowrap font-bold">
           協力監製
         </div>
