@@ -33,7 +33,7 @@ function FlowPage() {
       etc: "選填",
     },
     {
-      title: "其他補充/加分事項\n(可提供雲端連結)",
+      title: "其他補充/加分事項\n(並提供公開雲端連結)",
       icon: "https://web.forestdev.work/chiayi/opencall/paper_y.svg",
       etc: "選填",
     },
@@ -76,8 +76,7 @@ function FlowPage() {
   ];
   const step3 = [
     {
-      title:
-        "影片解析度:以1920*1080(FHD)或以上之avi/mov/mpg/wmv/mp4 (h264)格式，影片編輯軟體不限。",
+      title: "影片解析度:以1920*1080(FHD)或以上之 mov/mp4 (h.264)格式。",
       icon: "https://web.forestdev.work/chiayi/opencall/icon06.svg",
     },
     {
@@ -122,9 +121,9 @@ function FlowPage() {
       <h2 className="text-xl mb-8 border-l-4 border-[#30E2DD]  text-[#30E2DD] pl-4 flex items-center">
         第 1 階段 : 企劃提案
       </h2>
-      <div className="text-sm mb-4">
+      <div className=" mb-4 leading-6">
         報名者只需要填寫報名表單上的相關問題，包含「片名」、「片
-        種」、「製作立意-500字內」、「故事內容簡述-500字內」、「人物介紹、腳本、分鏡、場景等設定-500字內」、「嘉義元素說明推廣效益評估-500字內」、「片花(選填)」、「其他補充或加分事項-500字內(選填，並可提供雲端連結)」
+        種」、「製作立意-500字內」、「故事內容簡述-500字內」、「人物介紹、腳本、分鏡、場景等設定-500字內」、「嘉義元素說明推廣效益評估-500字內」、「片花(選填)」、「其他補充或加分事項-500字內(選填，並提供公開雲端連結)」
       </div>
       <div className="py-4">
         <div className="grid grid-cols-5 gap-4 ">
@@ -170,7 +169,7 @@ function FlowPage() {
         </div>
       </div>
       <div className="flex gap-4 justify-center items-center w-10/12 mx-auto my-6">
-        <div className=" rounded-full text-zinc-800 bg-sky-400 py-2 px-4 whitespace-nowrap">
+        <div className=" rounded-full text-zinc-800 bg-sky-400 py-2 px-4 whitespace-nowrap font-bold">
           初選審查
         </div>
         <div className="text-base">
@@ -181,11 +180,11 @@ function FlowPage() {
       <h2 className="text-xl mb-8 border-l-4 border-[#30E2DD]  text-[#30E2DD] pl-4 flex items-center">
         第 2 階段 : 協力產製
       </h2>
-      <div className="text-base mb-4">
-        入選者 從中完成「20小時」的培育時數累積之規定需求。{" "}
+      <div className="leading-6 mb-4">
+        入選者 從中完成「20小時」的培育時數累積之規定需求 (線上或線下方式皆可)
         <a
           href="https://web.forestdev.work/chiayi/opencall/doc/課表Final.pdf"
-          className="flex items-center gap-1  text-cyan-400 hover:text-cyan-300"
+          className=" flex items-center gap-1  text-cyan-400 hover:text-cyan-300"
           target="_blank"
         >
           詳見影視音基地課表
@@ -207,10 +206,10 @@ function FlowPage() {
         <div>監製名單</div>
       </div>
       <div className="flex gap-4 justify-center items-center w-10/12 mx-auto my-6">
-        <div className=" rounded-full text-zinc-800 bg-sky-400 py-2 px-4 whitespace-nowrap">
+        <div className=" rounded-full text-zinc-800 bg-sky-400 py-2 px-4 whitespace-nowrap font-bold">
           協力監製
         </div>
-        <div className="text-base">
+        <div className="leading-6">
           每組入選者將配選一位監製，透過線上或線下方式協助控管進度、解決問題，確保最終完整的
           12 分鐘影片可以順利完成，並達到最佳呈現效果。
         </div>
@@ -225,7 +224,7 @@ function FlowPage() {
         第 3 階段 : 成果影片決選
       </h2>
       <div className="text-base mb-4">
-        邀請影視產業界、學者及專家組成評審委員會，進行最終決審，並暫定114年7月26日需出席頒獎典禮，頒發獎金與獎狀。
+        邀請影視產業界、學者及專家組成評審委員會，進行最終決審，並暫定114年7月26日需出席頒獎典禮，頒發補助費與獎狀。
       </div>
       <div className="bg-gray-800/80 py-2 text-center mb-8 tracking-wider  font-bold">
         繳交影片格式

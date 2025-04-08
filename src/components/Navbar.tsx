@@ -28,7 +28,7 @@ function Navbar() {
 
   return (
     <nav className="fixed top-0 w-full bg-white/10 z-50 border-b border-gray-800">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="w-10/12 mx-auto flex justify-between items-center">
         <div className="text-2xl font-bold">嘉映短片徵件</div>
         <div className="flex">
           {navItems.map((item) => (

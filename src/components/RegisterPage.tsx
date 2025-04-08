@@ -1,4 +1,4 @@
-import { Dot, Paperclip } from "lucide-react";
+import { Dot, ExternalLink, Paperclip } from "lucide-react";
 
 function RegisterPage() {
   return (
@@ -7,20 +7,20 @@ function RegisterPage() {
         報名流程
       </h2>
       <div className="flex flex-col gap-10 mb-10">
-        <div className="flex items-center gap-4">
+        <div className="flex items-start gap-4 ">
           <div className="w-[60%] pr-[10%]">
             <div className="font-bold rounded-full bg-[#30E2DD] text-black p-2 px-4 w-25 mb-2 flex justify-center items-center">
               報名組別
             </div>
-            <div>
+            <div className=" inline-block">
               分為{" "}
               <span className="text-[#30E2DD]">「學生組」或「社會組」</span>
               二擇一，皆採{" "}
               <a
                 href="https://docs.google.com/forms/d/1HsD8Sp3s3c46_NuGr4-LURbJonFmCmEcJRh8fqhowBU/edit"
-                className="text-[#30E2DD] hover:text-cyan-300"
+                className="text-[#30E2DD] hover:text-cyan-300  items-center gap-1 inline-flex"
               >
-                網路報名。
+                <ExternalLink size={16} /> 網路報名。
               </a>
               <br />
               (每人限報一組別)
@@ -41,7 +41,7 @@ function RegisterPage() {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-4 mt-4">
+        <div className="flex items-start gap-4 mt-4 b">
           <div className="w-[60%]  pr-[10%]">
             <div className="font-bold rounded-full bg-[#30E2DD] text-black p-2 px-4 w-25 mb-2 flex justify-center items-center">
               報名人數
@@ -52,7 +52,7 @@ function RegisterPage() {
               報名，團隊人數至多 3
               人，每人/隊限繳交作品乙式，重覆投稿者，以第一次投稿作品為準。
               <br />
-              團隊報名需以指派隊長代表報名。
+              團隊報名需以指派代表人作為聯絡窗口。
             </div>
           </div>
           <div className="w-1/2 flex gap-12">
