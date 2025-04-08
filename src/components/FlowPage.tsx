@@ -174,7 +174,7 @@ function FlowPage() {
         </div>
         <div className="text-base">
           由主辦單位邀集相關領域之專家、學者組成評審團，擇優選出入選者，學生組及社會組，
-          <span className="text-[#30E2DD]">各5至7組，備取2組為限。</span>
+          <div className="text-[#30E2DD]">各5至7組，備取2組為限。</div>
         </div>
       </div>
       <h2 className="text-xl mb-8 border-l-4 border-[#30E2DD]  text-[#30E2DD] pl-4 flex items-center">
