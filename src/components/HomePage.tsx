@@ -25,6 +25,13 @@ function HomePage() {
                 showinfo: 0,
                 rel: 0,
                 modestbranding: 1,
+                disablekb: 1,
+                fs: 0,
+                iv_load_policy: 3,
+                autohide: 1,
+                cc_load_policy: 0,
+                color: "white",
+                playsinline: 1,
               },
             },
           }}
