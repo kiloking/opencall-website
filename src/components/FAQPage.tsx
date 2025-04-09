@@ -9,6 +9,75 @@ function FAQPage() {
           <div>
             <h3 className="text-xl mb-3 flex items-center">
               <span className="text-cyan-400 mr-2">Q:</span>
+              先企劃，後拍攝是什麼意思
+            </h3>
+            <p className="text-gray-300 pl-6">
+              <span className="text-cyan-400 mr-2">A:</span>
+              報名只需要填寫表單4個問題，不須繳交完整影片，但仍可以提供相關片花做為加分項目。經由初審兩組別有5-7組入選者，再經由1個多月的製作期，需於114年7月15日前完成成片。
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl mb-3 flex items-center">
+              <span className="text-cyan-400 mr-2">Q:</span>
+              協力製作是什麼意思
+            </h3>
+            <p className="text-gray-300 pl-6">
+              <span className="text-cyan-400 mr-2">A:</span>
+              主要仍是入選者本身需完成規定之成片，協力製作指安排監製於製作過程中從旁輔導、解決相關問題及追蹤進度等。
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl mb-3 flex items-center">
+              <span className="text-cyan-400 mr-2">Q:</span>
+              製作費補助是分兩階段發放嗎?
+            </h3>
+            <p className="text-gray-300 pl-6">
+              <span className="text-cyan-400 mr-2">A:</span>
+              凡經第一階段入選者，完成規定之成片與相關切結書等，將有基本製作費資助:社會組新台幣
+              20,000 元;學生組新台幣 10,000 元。
+              第二階段透過入選者們的成果影片，決選出前三名，並將再有額外的高額獎金，換言之，即便最後決選未入選前三名，但完成相關的入選者仍保有第一階段的基本製作費資助。製作費補助將擬於114年7月26日統一發放。
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl mb-3 flex items-center">
+              <span className="text-cyan-400 mr-2">Q:</span>
+              製作費補助，團隊報名獎金計算
+            </h3>
+            <p className="text-gray-300 pl-6">
+              <span className="text-cyan-400 mr-2">A:</span>
+              不論是入選或決選的製作費資助，都是以團隊為單位，舉例:社會組3人團隊入選並經決選為第二名，此團隊將獲得新台幣20,000(基本製作費)加上50,000(決選銀獎)元，共計70,000元的總團隊資助金，非3人每人都70,000。
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl mb-3 flex items-center">
+              <span className="text-cyan-400 mr-2">Q:</span>
+              嘉義市元素比例怎麼計算
+            </h3>
+            <p className="text-gray-300 pl-6">
+              <span className="text-cyan-400 mr-2">A:</span>
+              凡能以嘉義市做為題材或場景拍攝等，並能融入提案故事中，且非刻意套入，仍希冀保有提案故事的完整與流暢性，並交由審查委員共同評斷。
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl mb-3 flex items-center">
+              <span className="text-cyan-400 mr-2">Q:</span>
+              入選後，20小時的規定研習時數計算
+            </h3>
+            <p className="text-gray-300 pl-6">
+              <span className="text-cyan-400 mr-2">A:</span>
+              透過嘉義市影視人才培育計畫之課表，提供線上連結給入選者免費觀看以達到20小時之規定，亦歡迎線下直接蒞臨授課地點(嘉義市)。此外，與監製相關會議亦可納入20小時的時數累積。
+              團隊報名者，凡有代表合計完成即可，非全團隊成員都需各自完成。
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl mb-3 flex items-center">
+              <span className="text-cyan-400 mr-2">Q:</span>
               如果是嘉義縣的主題可以嗎？
             </h3>
             <p className="text-gray-300 pl-6">

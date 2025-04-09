@@ -116,7 +116,7 @@ function FlowPage() {
             alt="先審查，後拍攝"
           />
         </div>
-        <div className=" text-lg font-bold ">「先審查，後拍攝」</div>
+        <div className=" text-lg font-bold ">「先企劃，後拍攝」</div>
       </div>
       <h2 className="text-xl mb-8 border-l-4 border-[#30E2DD]  text-[#30E2DD] pl-4 flex items-center">
         第 1 階段 : 企劃提案

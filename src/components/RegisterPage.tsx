@@ -294,6 +294,14 @@ function RegisterPage() {
         <div className="flex gap-4">
           <a
             className="underline aspect-square bg-white/30 w-40 p-5 text-white text-center flex items-center justify-center font-bold flex-col gap-2"
+            href="https://web.forestdev.work/chiayi/opencall/doc/2025 PHAH嘉義短片徵件簡章.pdf"
+            target="_blank"
+          >
+            <Paperclip size={30} />
+            2025 PHAH嘉義短片徵件簡章.pdf
+          </a>
+          <a
+            className="underline aspect-square bg-white/30 w-40 p-5 text-white text-center flex items-center justify-center font-bold flex-col gap-2"
             href="https://web.forestdev.work/chiayi/opencall/doc/法定代理人監護人同意書.docx"
             target="_blank"
           >

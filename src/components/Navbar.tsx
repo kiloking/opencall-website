@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const navItems = [
   { name: "首頁", path: "/" },
-  { name: "嘉映短片徵件", path: "/about" },
+  { name: "PHAH 嘉義短片徵件", path: "/about" },
   { name: "徵件流程", path: "/flow" },
   { name: "報名方式", path: "/register" },
   { name: "製作費補助", path: "/funding" },
@@ -14,7 +14,7 @@ const navItems = [
 ];
 
 function Navbar() {
-  const [activeTab, setActiveTab] = useState("嘉映短片徵件");
+  const [activeTab, setActiveTab] = useState("PHAH 嘉義短片徵件");
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -30,7 +30,7 @@ function Navbar() {
   return (
     <nav className="fixed top-0 w-full bg-white/10 z-50 border-b border-gray-800">
       <div className="w-11/12 md:w-10/12 mx-auto flex justify-between items-center">
-        <div className="text-xl md:text-2xl font-bold">嘉映短片徵件</div>
+        <div className="text-xl md:text-base font-bold">PHAH 嘉義短片徵件</div>
 
         {/* 手機版漢堡選單按鈕 */}
         <button
