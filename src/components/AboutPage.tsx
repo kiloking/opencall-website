@@ -19,7 +19,7 @@ function AboutPage() {
               />
             </div> */}
             <img
-              src="https://web.forestdev.work/chiayi/opencall/vi01.jpg"
+              src="https://web.forestdev.work/chiayi/opencall/vi02.jpg"
               alt=""
               className="w-full h-full object-cover"
             />
