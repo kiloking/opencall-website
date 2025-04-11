@@ -1,6 +1,13 @@
 import { ExternalLink } from "lucide-react";
+import { useState } from "react";
 
 function AboutPage() {
+  const [flippedIndex, setFlippedIndex] = useState(null);
+
+  const handleCardClick = (index) => {
+    setFlippedIndex(flippedIndex === index ? null : index);
+  };
+
   return (
     <div className=" ">
       {/* 徵件宗旨 Section */}
@@ -157,12 +164,17 @@ function AboutPage() {
                 },
               ],
             },
-          ].map((item) => (
+          ].map((item, index) => (
             <div
               key={item.title}
               className="relative aspect-video group cursor-pointer perspective-1000"
+              onClick={() => handleCardClick(index)}
             >
-              <div className="relative w-full h-full transition-transform duration-700 transform-style-3d group-hover:rotate-y-180">
+              <div
+                className={`relative w-full h-full transition-transform duration-700 transform-style-3d ${
+                  flippedIndex === index ? "rotate-y-180" : ""
+                } group-hover:rotate-y-180`}
+              >
                 {/* 正面 */}
                 <div className="absolute w-full h-full backface-hidden">
                   <img
@@ -178,7 +190,7 @@ function AboutPage() {
 
                 {/* 背面 */}
                 <div
-                  className="absolute w-full h-full  text-lg p-4 overflow-auto rotate-y-180 backface-hidden text-white"
+                  className="absolute w-full h-full text-lg p-4 overflow-auto rotate-y-180 backface-hidden text-white"
                   style={{
                     backgroundImage: `url(https://web.forestdev.work/chiayi/opencall/imgbg01.png)`,
                     backgroundSize: "cover",
@@ -188,7 +200,7 @@ function AboutPage() {
                   <h3 className="text-2xl font-bold mb-2 text-center">
                     {item.title}
                   </h3>
-                  <p className="text-left whitespace-pre-wrap leading-6  ">
+                  <p className="text-left whitespace-pre-wrap leading-6">
                     {item.sub.map((sub) => (
                       <div key={sub.title} className="my-2">
                         <span className="font-bold text-white">
