@@ -276,7 +276,7 @@ function ContactPage() {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-          <div className="mt-8 w-full grid grid-cols-3  bg-white/90  p-6 rounded-lg   gap-10">
+          <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-3  bg-white/90  p-6 rounded-lg   gap-10">
             <div className="items-center flex gap-4">
               <h2 className="text-base  text-cyan-800 whitespace-nowrap border-r-2 border-cyan-800 pr-2">
                 指導單位
