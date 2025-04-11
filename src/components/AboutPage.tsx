@@ -2,9 +2,9 @@ import { ExternalLink } from "lucide-react";
 import { useState } from "react";
 
 function AboutPage() {
-  const [flippedIndex, setFlippedIndex] = useState(null);
+  const [flippedIndex, setFlippedIndex] = useState<number | null>(null);
 
-  const handleCardClick = (index) => {
+  const handleCardClick = (index: number) => {
     setFlippedIndex(flippedIndex === index ? null : index);
   };
 
