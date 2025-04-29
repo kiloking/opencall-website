@@ -216,7 +216,7 @@ function FlowPage() {
       </div>
       <div className="w-12/12 mx-auto my-6">
         <img
-          src="https://web.forestdev.work/chiayi/opencall/master.png"
+          src="https://web.forestdev.work/chiayi/opencall/master2.png"
           alt="監製名單"
         />
       </div>
