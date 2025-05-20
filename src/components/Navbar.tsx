@@ -30,7 +30,7 @@ function Navbar() {
 
   return (
     <nav className="fixed top-0 w-full bg-white/10 z-50 border-b border-gray-800">
-      <div className="w-11/12 md:w-10/12 mx-auto flex justify-between items-center">
+      <div className="w-11/12 md:w-11/12 mx-auto flex justify-between items-center">
         <div className="text-xl md:text-base font-bold">PHAH 嘉義短片徵件</div>
 
         {/* 手機版漢堡選單按鈕 */}
@@ -42,12 +42,12 @@ function Navbar() {
         </button>
 
         {/* 桌面版選單 */}
-        <div className="hidden md:flex">
+        <div className="hidden md:flex text-sm">
           {navItems.map((item) => (
             <Link
               key={item.name}
               to={item.path}
-              className={`px-4 py-4 relative hover:text-[#30E2DD] transition-colors
+              className={`px-2 py-4 relative hover:text-[#30E2DD] transition-colors whitespace-nowrap
                 ${
                   activeTab === item.name
                     ? "bg-gradient-to-t from-[#30E2DD] to-[#30E2DD00]"
@@ -70,7 +70,7 @@ function Navbar() {
           </div>
           <a
             href="https://docs.google.com/forms/d/1HsD8Sp3s3c46_NuGr4-LURbJonFmCmEcJRh8fqhowBU/viewform?edit_requested=true"
-            className="bg-[#30E2DD] text-black px-6 py-2 rounded-md flex items-center"
+            className="bg-[#30E2DD] text-black px-6 py-2 text-sm rounded-md flex items-center"
             target="_blank"
           >
             <ScrollText className="mr-2" />
@@ -99,7 +99,7 @@ function Navbar() {
               ))}
               <a
                 href="https://docs.google.com/forms/d/1HsD8Sp3s3c46_NuGr4-LURbJonFmCmEcJRh8fqhowBU/viewform?edit_requested=true"
-                className="mx-4 my-4 bg-[#30E2DD] text-black px-6 py-2 rounded-md flex items-center justify-center"
+                className="mx-4 my-4 bg-[#30E2DD] text-black  px-6 py-2 rounded-md flex items-center justify-center"
                 target="_blank"
                 onClick={() => setIsMenuOpen(false)}
               >
