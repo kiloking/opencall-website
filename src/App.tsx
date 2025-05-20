@@ -8,6 +8,7 @@ import FundingPage from "./components/FundingPage";
 import TimelinePage from "./components/TimelinePage";
 import FAQPage from "./components/FAQPage";
 import ContactPage from "./components/ContactPage";
+import ListPage from "./components/ListPage";
 import { Toaster } from "sonner";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/timeline" element={<TimelinePage />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/list" element={<ListPage />} />
         </Routes>
       </main>
     </div>

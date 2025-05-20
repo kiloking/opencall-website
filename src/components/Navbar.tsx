@@ -11,6 +11,7 @@ const navItems = [
   { name: "時間流程", path: "/timeline" },
   { name: "常見Q&A", path: "/faq" },
   { name: "聯絡我們", path: "/contact" },
+  { name: "入圍名單", path: "/list" },
 ];
 
 function Navbar() {
