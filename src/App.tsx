@@ -2,14 +2,10 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HomePage from "./components/HomePage";
 import AboutPage from "./components/AboutPage";
-import FlowPage from "./components/FlowPage";
-import RegisterPage from "./components/RegisterPage";
-import FundingPage from "./components/FundingPage";
-import TimelinePage from "./components/TimelinePage";
-import FAQPage from "./components/FAQPage";
 import ContactPage from "./components/ContactPage";
-import ListPage from "./components/ListPage";
 import { Toaster } from "sonner";
+import Education from "./components/Education";
+import ShortsPage from "./components/ShortsPage";
 
 function App() {
   return (
@@ -23,13 +19,9 @@ function App() {
       <main className="pt-16 w-11/12 md:w-8/12 mx-auto">
         <Routes>
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/flow" element={<FlowPage />} />
-          <Route path="/register" element={<RegisterPage />} />
-          <Route path="/funding" element={<FundingPage />} />
-          <Route path="/timeline" element={<TimelinePage />} />
-          <Route path="/faq" element={<FAQPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/list" element={<ListPage />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/shorts" element={<ShortsPage />} />
         </Routes>
       </main>
     </div>
