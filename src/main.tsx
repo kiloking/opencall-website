@@ -7,7 +7,7 @@ import "./index.css";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     {/* 暫時隱藏網站 */}
-    <div
+    {/* <div
       style={{
         backgroundColor: "black",
         width: "100vw",
@@ -17,11 +17,11 @@ createRoot(document.getElementById("root")!).render(
         left: 0,
         zIndex: 9999,
       }}
-    ></div>
+    ></div> */}
 
     {/* 原本的網站內容 */}
-    {/* <BrowserRouter>
+    <BrowserRouter>
       <App />
-    </BrowserRouter> */}
+    </BrowserRouter>
   </StrictMode>
 );
